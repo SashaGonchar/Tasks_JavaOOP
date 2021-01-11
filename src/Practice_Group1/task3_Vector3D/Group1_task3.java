@@ -1,4 +1,4 @@
-package Practice_Group1;
+package Practice_Group1.task3_Vector3D;
 //Описать класс «Vector3d» (т. е., он должен описывать вектор в трехмерной,
 //декартовой системе координат). В качестве свойств этого класса возьмите
 //координаты вектора. Для этого класса реализовать методы сложения, скалярного и
@@ -40,10 +40,13 @@ import java.util.Scanner;
             switch (operation){
                 case(1):
                     arr[firstVector].additionVector3D(arr[secondVector]);
+                    break;
                 case(2):
                     arr[firstVector].dotProductVector3D(arr[secondVector]);
+                    break;
                 case(3):
                     arr[firstVector].vectorProductVector3D(arr[secondVector]);
+                    break;
             }
 
 
@@ -58,9 +61,7 @@ import java.util.Scanner;
     }
 
 class OriginVector3D{
-    double x;
-    double y;
-    double z;
+    private double x,y,z;
     OriginVector3D( double x, double y, double z){
         this.x=x;
         this.y=y;
